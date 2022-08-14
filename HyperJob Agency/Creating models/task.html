@@ -1,0 +1,9 @@
+<html><body><h5 id="description">Description</h5>
+<p>"HyperJob" is a recruitment agency founded back in 1970. Its managers still prefer to communicate by phone or email and search for employees in an old-fashioned way. That was an efficient strategy some twenty years ago, but nowadays, potential employees prefer to apply for jobs online. The problem is that "HyperJob" still doesn't have a website, so they want you to develop one as soon as possible.</p>
+<p>The website should allow recruiters to create vacancies and job seekers to create resumes.</p>
+<h5 id="objectives">Objectives</h5>
+<p>We need to safely store all the vacancies and resumes in a database. Your first task is to develop data models to manage the database tables.</p>
+<p></p><div class="alert alert-primary"> Use the default settings of the project with the predefined SQLite database. </div><p></p>
+<p>Throughout the project, we will need at least two models: <code class="java">Vacancy</code> and <code class="java">Resume</code>. Both of them should have <code class="java">description</code> and <code class="java">author</code> fields. The <code class="java">description</code> field is a text field for no more than 1024 symbols and the <code class="java">author</code> field is a foreign key linked to the <code class="java">django.contrib.auth.models.User</code> model. </p>
+<p>Hint! If you get stuck when creating the author field, check out an <a href="https://docs.djangoproject.com/en/4.0/topics/auth/customizing/#extending-the-existing-user-model" rel="noopener noreferrer nofollow" target="_blank">example provided in the docs</a>.</p>
+<p>Define <code class="java">Vacancy</code> and <code class="java">Resume</code> in the <em>models.py </em>modules in the applications (respectively, vacancy and resume) and migrate them to the database.</p></body></html>

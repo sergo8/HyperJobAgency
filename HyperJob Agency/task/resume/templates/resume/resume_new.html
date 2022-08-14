@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New resume</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <table>{{ resume_form.as_table }}</table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

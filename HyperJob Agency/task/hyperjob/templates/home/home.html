@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    {% if manager == False %}
+        <form method="get" action="resume/new">
+          {% csrf_token %}
+          <button type="submit">Create Resume</button>
+        </form>
+    {% elif manager %}
+        <form method="get" action="vacancy/new">
+          {% csrf_token %}
+          <button type="submit">Create Vacancy</button>
+        </form>
+    {% elif manager == None %}
+        <p>User is not authenticated. No form available.</p>
+    {% endif %}
+</body>
+</html>
